@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import TodoApp from './components/todo-app'
-import './asserts/App.css';
-import './asserts/main.styl'
+import React, { Component } from 'react'
+import {Provider} from 'react-redux'
+import CustomRouter from './router'
+import store from './store'
+import './asserts/index.styl'
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-          <TodoApp/>
-      </div>
-    );
+        <Provider store={store}>
+            <CustomRouter/>
+        </Provider>
+    )
   }
 }
 
-export default App;
+export default App

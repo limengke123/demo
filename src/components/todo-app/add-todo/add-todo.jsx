@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 
-import {addTodo} from '../actions'
+import {addTodo} from '../../../actions/todo'
+import style from './add-todo.styl'
 
 class AddTodo extends Component {
     constructor () {
@@ -33,8 +34,8 @@ class AddTodo extends Component {
     render () {
         const {value} = this.state
         return (
-            <div>
-                <input type="text" value={value} onChange={this.handleChange} onKeyPress={this.addItem}/>
+            <div className={style["add-todo"]}>
+                <input className={style["todo-input"]} type="text" value={value} onChange={this.handleChange} onKeyPress={this.addItem}/>
             </div>
         )
     }

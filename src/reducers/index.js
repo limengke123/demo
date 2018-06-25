@@ -1,10 +1,12 @@
 import {combineReducers} from 'redux'
 import todos from './todos'
 import filter from './filter'
+import asyncData from './async-list'
 
-const todoApp = combineReducers({
+const rootReducer = combineReducers({
     todos,
     filter,
+    asyncData,
 })
 
-export default todoApp
+export default rootReducer

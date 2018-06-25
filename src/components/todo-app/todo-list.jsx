@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import TodoItem from './todo-item'
+import TodoItem from './todo-item/todo-item'
 import {connect} from 'react-redux'
-import {toggoleTodo} from "../actions/index"
+import {toggleTodo} from "../../actions/todo"
 
 const filterTodos = (todos, filter) => {
     switch (filter) {
@@ -35,7 +35,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     onTodoClick: id => {
-        dispatch(toggoleTodo(id))
+        dispatch(toggleTodo(id))
     }
 })
 

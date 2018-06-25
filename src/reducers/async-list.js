@@ -6,14 +6,14 @@ export default (state = {
     switch (action.type) {
         case actionType.REQUEST_POSTS:
             return {
-                isFetching: true,
                 ...state,
+                isFetching: true,
             }
         case actionType.RECEIVE_POSTS:
             return {
+                ...state,
                 isFetching: false,
                 items: action.items,
-                ...state
             }
         default:
             return state

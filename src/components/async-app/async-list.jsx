@@ -19,7 +19,9 @@ class AsyncList extends React.Component {
                 {
                     isFetching ?
                         <Fetching/> :
-                        <List listItems={items}/>
+                        items.length ?
+                            <List listItems={items}/> :
+                            "列表中没有"
                 }
             </div>
         )

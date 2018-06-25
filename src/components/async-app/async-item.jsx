@@ -1,8 +1,10 @@
 import React from 'react'
 
-const AsyncItem = () => (
+const AsyncItem = ({item}) => (
     <div>
-        this is item
+        <div>
+            {item.title}
+        </div>
     </div>
 )
 

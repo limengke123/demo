@@ -18,6 +18,6 @@ export const fetchPost = () => (dispatch) => {
     dispatch(requestPosts())
     axios.get('/topics')
         .then(resp => {
-            dispatch(receivePosts(resp.data))
+            dispatch(receivePosts(resp.data.data))
         })
 }

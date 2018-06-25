@@ -9,11 +9,6 @@ class AsyncApp extends React.Component {
         super(...arguments)
     }
 
-    componentDidMount () {
-        // const {history} = this.props
-        console.log("dsa", this.props)
-    }
-
     render () {
         return (
             <div>

@@ -1,11 +1,17 @@
 import React from 'react'
+import {withRouter} from 'react-router-dom'
 
-const AsyncItem = ({item}) => (
-    <div>
+const AsyncItem = ({item, history}) => {
+    const jumpArticle = () => {
+        history.push(`/async/${item.id}`)
+    }
+    return (
         <div>
-            {item.title}
+            <div onClick={jumpArticle}>
+                {item.title}
+            </div>
         </div>
-    </div>
-)
+    )
+}
 
-export default AsyncItem
+export default withRouter(AsyncItem)

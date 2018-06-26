@@ -5,10 +5,6 @@ import AsyncHeader from '../components/async-app/async-header'
 import AsyncList from '../components/async-app/async-list'
 
 class AsyncApp extends React.Component {
-    constructor () {
-        super(...arguments)
-    }
-
     render () {
         return (
             <div>

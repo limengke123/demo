@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {fetchPost} from '../../actions/async'
+import {fetchListPost} from '../../actions/async'
 
 class AsyncHeader extends React.Component {
     render () {
@@ -15,7 +15,7 @@ class AsyncHeader extends React.Component {
 
 const mapDispatchToProps = dispatch => ({
     fetchData: () => {
-        dispatch(fetchPost())
+        dispatch(fetchListPost())
     }
 })
 

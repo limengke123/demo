@@ -6,7 +6,8 @@ import AsyncItem from './async-item'
 
 class AsyncList extends React.Component {
     render () {
-        const {isFetching, items} = this.props.asyncData
+        const {asyncList} = this.props.asyncData
+        const {isFetching, lists} = asyncList
         const Fetching = () => (
             <div>
                 is loading now !!!
@@ -20,8 +21,8 @@ class AsyncList extends React.Component {
                 {
                     isFetching ?
                         <Fetching/> :
-                        items.length ?
-                            <List listItems={items}/> :
+                        lists.length ?
+                            <List listItems={lists}/> :
                             "列表中没有"
                 }
             </div>

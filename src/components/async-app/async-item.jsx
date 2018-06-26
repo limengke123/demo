@@ -7,9 +7,9 @@ const AsyncItem = ({item, history}) => {
     }
     return (
         <div>
-            <div onClick={jumpArticle}>
+            <span onClick={jumpArticle}>
                 {item.title}
-            </div>
+            </span>
         </div>
     )
 }

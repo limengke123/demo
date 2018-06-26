@@ -9,6 +9,7 @@ export default class TodoApp extends Component {
         return (
             <div>
                 <Link to="/async">to async app</Link>
+                <Link to="/motion">to motion app</Link>
                 <AddTodo/>
                 <TodoList/>
                 <FilterTodo/>

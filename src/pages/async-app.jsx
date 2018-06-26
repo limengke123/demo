@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 import AsyncHeader from '../components/async-app/async-header'
-import AsyncList from '../components/async-app/async-list'
+import AsyncList from '../components/async-app/async-list/async-list'
 
 class AsyncApp extends React.Component {
     render () {

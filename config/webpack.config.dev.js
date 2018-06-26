@@ -155,7 +155,8 @@ module.exports = {
               use:[
                   'style-loader',
                   //modules 开启css modules
-                  'css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]',
+                  'css-loader?modules&localIdentName=[name]-[hash:base64:5]',
+                  // 'css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]',
                   // {
                   //     loader:'postcss-loader',
                   //     options:{

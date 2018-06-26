@@ -2,7 +2,8 @@ import React from 'react'
 import {compose} from 'redux'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
-import AsyncItem from './async-item'
+import AsyncItem from '../async-item/async-item'
+import style from './async-list.styl'
 
 class AsyncList extends React.Component {
     render () {
@@ -14,10 +15,10 @@ class AsyncList extends React.Component {
             </div>
         )
         const List = ({listItems}) => (
-            listItems.map(item => <AsyncItem key={item.id} item={item}/>)
+            listItems.map(item => <AsyncItem key={item.id} item={item} className="dsajk"/>)
         )
         return (
-            <div>
+            <div className={style["async-list"]}>
                 {
                     isFetching ?
                         <Fetching/> :

@@ -1,0 +1,17 @@
+.async-list
+  width 800px
+  margin 0 auto
+  .async-list-ani-item
+    animation: listAni 1s ease both
+  &:nth-child(1)
+    animation-delay 0.2s
+  &:nth-child(2)
+    animation-delay 0.4s
+  &:nth-child(3)
+    animation-delay 0.6s
+
+@keyframes listAni
+  0%
+    transform: scale(0)
+  100%
+    transform: scale(1)

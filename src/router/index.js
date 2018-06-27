@@ -3,8 +3,8 @@ import {BrowserRouter, Route, Link} from 'react-router-dom'
 import TodoApp from '../pages/todo-app'
 import AsyncApp from '../pages/async-app'
 import ArticlePage from '../pages/article-page'
-import MotionDemo1 from '../pages/motion-page/motion-demo1'
-import MotionDemo2 from '../pages/motion-page/motion-demo2'
+import MotionDemo1 from '../pages/motion-page/demo1/motion-demo1'
+import MotionDemo2 from '../pages/motion-page/demo2/motion-demo2'
 
 const MotionPage = ({match}) => (
     <Fragment>

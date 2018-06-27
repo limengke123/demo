@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {Motion, spring} from 'react-motion'
-import style from './motion-page.styl'
+import style from './motion-demo1.styl'
 
-export default class MotionPage extends React.Component {
+export default class MotionDemo1 extends React.Component {
     constructor () {
         super(...arguments)
         this.state = {
@@ -22,7 +22,7 @@ export default class MotionPage extends React.Component {
     render () {
         return (
             <div>
-                <Link to="/">回到首页</Link>
+                <Link to="/motion">回到动画列表</Link>
                 <button
                     onMouseDown={this.handleMouseDown}
                     onTouchStart={this.handleTouchStart}>

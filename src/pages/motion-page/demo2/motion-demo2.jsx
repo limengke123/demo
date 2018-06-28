@@ -13,6 +13,10 @@ export default class MotionPage2 extends React.Component {
         window.addEventListener('mousemove', this.handleMouseMove)
         window.addEventListener('touchmove', this.handleTouchMove)
     }
+    componentWillUnmount () {
+        window.removeEventListener('mousemove', this.handleMouseMove)
+        window.removeEventListener('touchmove', this.handleTouchMove)
+    }
     handleMouseMove = ({pageX: x, pageY: y}) => {
         this.setState({x, y})
     }
@@ -46,11 +50,10 @@ export default class MotionPage2 extends React.Component {
                                             key={i}
                                             className={`${style['demo2-ball']} ${style[`ball-${i}`]}`}
                                             style={{
-                                                transform: `translate3d(${x - 25}px, ${y - 25}px)`,
+                                                transform: `translate3d(${x - 25}px, ${y - 25}px, 0)`,
                                                 zIndex: balls.length - i
                                             }}
                                         >
-
                                         </div>
                                     )
                                 }
